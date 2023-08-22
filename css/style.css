@@ -47,6 +47,21 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+.d-flex{ display: flex !important;}
+.flex-wrap{ flex-wrap: wrap !important;}
+.jcb{ justify-content: space-between !important;}
+.jcc{ justify-content: center !important;}
+.aic{ align-items: center !important;}
+.w-100{ width: 100% !important;}
+
+.text-right{ text-align: right !important;}
+.text-center{ text-align: center !important;}
+
+.text-white{ color: white !important}
+.bg-red{ background-color: var(--colorBtn) !important;}
+.w50{width: 50% !important;}
+
+
 #mainbanner{
     background: url(../img/bn.jpg) no-repeat ;    
     background-size: cover;
@@ -114,4 +129,38 @@ body{
 }
 .decription .face3:before{
     content: "03";
+}
+#sec4{
+    position: relative;
+}
+#sec4 .container{
+    position: relative;
+    z-index: 10;
+}
+#sec4::before, #sec4::after{
+    content: "" ;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+}
+#sec4::before{
+    right: 0;
+    background : url(../img/map.png) no-repeat right top;
+    background-size: 100%;
+}
+#sec4::after{
+    left: 0;
+    background : url(../img/form.png) no-repeat left top;
+    background-size: 100%;
+}
+
+#way dt{
+
+}
+#way dd{
+
+}
+#way dd:not(:last-child){
+
 }

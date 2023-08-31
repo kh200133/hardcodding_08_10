@@ -58,7 +58,12 @@ body{
 .text-center{ text-align: center !important;}
 
 .text-white{ color: white !important}
-.bg-red{ background-color: var(--colorBtn) !important;}
+.bg-red{ background-color: var(--colordbtn) !important;}
+.bg-white{ background-color: white !important;}
+.rounded{ border-radius: 10px;}
+.text-green{color: #d1ffb3 !important;}
+.text-gray{color: var(--colorgreen) !important;}
+.border-0{border: 0 !important;}
 .w50{width: 50% !important;}
 
 
@@ -132,6 +137,7 @@ body{
 }
 #sec4{
     position: relative;
+    padding: 30px 0;
 }
 #sec4 .container{
     position: relative;
@@ -146,21 +152,75 @@ body{
 }
 #sec4::before{
     right: 0;
-    background : url(../img/map.png) no-repeat right top;
-    background-size: 100%;
+    background : url(../img/map.png) no-repeat right center #324038;
+    background-size: auto 300%;
 }
 #sec4::after{
     left: 0;
     background : url(../img/form.png) no-repeat left top;
     background-size: 100%;
 }
-
+#sec4 .text-green{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+#way{
+    padding-left: 5rem;
+}
 #way dt{
 
 }
 #way dd{
-
+   
 }
 #way dd:not(:last-child){
+    margin-bottom: 1rem;
+}
+#form{
+    display: flex;
+    justify-content: end;
+}
+#form > div{
 
+}
+#form li{
+    line-height: 2.5;
+    padding: 0.25em 0;
+}
+#form li strong + *{
+    min-width: 250px;
+    margin-left: 1rem;
+}
+#form button{
+    min-width: 255px;
+    line-height: 2.5;
+    margin-top: 0.25em;
+    float: right; 
+}
+.agree{
+    margin-top: 1rem;
+}
+.agree input{
+    display: none;
+}
+.agree label{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.agree label:before{
+    content: "v";
+    color: transparent;
+    display: inline-block;
+    width: 1rem; height: 1rem;
+    border: 1px solid white;
+    margin-right: 0.5rem;
+}
+.agree input:checked + label:before{
+    content: "v";
+    color: white;
+}
+
+.ofh{
+    overflow: hidden;
 }
